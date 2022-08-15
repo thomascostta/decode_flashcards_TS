@@ -2,6 +2,8 @@ import React from 'react';
 import { Pressable, PressableProps, View } from 'react-native';
 import { MaterialIcons } from '@expo/vector-icons';
 
+import { useAnimationState, MotiView } from 'moti';
+
 import { styles } from './styles';
 import { COLORS } from '../../global/theme';
 
@@ -17,15 +19,35 @@ export function Button({
   icon,
   ...rest
 }: Props) {
+  const buttonAnimated = useAnimationState({
+    pressIn: {
+      transform: [{ scale: 0.5 }],
+    },
+    pressOut: {
+      transform: [{ scale: 1 }],
+    },
+  });
+
+  function handleAnimatedScale(state: 'pressIn' | 'pressOut') {
+    buttonAnimated.transitionTo(state)
+  }
+
   return (
-    <Pressable {...rest}>
-      <View style={[styles.container, styles[size], styles[color]]}>
+    <Pressable
+      onPressIn={() => handleAnimatedScale('pressIn')}
+      onPressOut={() => handleAnimatedScale('pressOut')}
+      {...rest}
+    >
+      <MotiView
+        style={[styles.container, styles[size], styles[color]]}
+        state={buttonAnimated}
+      >
         <MaterialIcons
           name={icon}
           size={size === 'small' ? 32 : 44}
           color={color === 'primary' ? COLORS.VIOLET : COLORS.WHITE}
         />
-      </View>
+      </MotiView>
     </Pressable>
   );
 }
