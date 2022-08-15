@@ -1,5 +1,3 @@
-![App Screenshot](.github/cover.png)
-
 # Flash.Cards
 App to help memorize. This application was created for the purpose of studies.
 
