@@ -1,8 +1,11 @@
-# Flash.Cards
+<h1 align="center">
+ Flash Cards 🤦‍♂️
+</h1>
+
+### Overview :book:
 App to help memorize. This application was created for the purpose of studies.
 
-
-## Stack
+### Stack
 
 - React Native
 - Typescript
@@ -12,7 +15,7 @@ App to help memorize. This application was created for the purpose of studies.
 - React Native SVG
 - And more...
 
-## Running
+### Running
 
 You have two branchs. The master you have project base with layout design only. And, the done you have the project finished with charts implemented.
 
@@ -23,10 +26,14 @@ Clone this project and start with Expo:
   yarn
   expo start
 ```
+---
 
-## Feedback 
+### Credits 🤝
+I thank [Rodrigo da Rocketseat](https://github.com/rodrigorgtic/ "Rodrigo da Rocketseat") for his mentorship on Youtube
 
-Would you like to speak with me? I find myself on Linkedin: [linkedin.com/in/thomasjeffcosta](https://www.linkedin.com/in/thomasjeffcosta/)
- 
-[![Linkedin Badge](https://img.shields.io/badge/-Thomas%20Costa-6633cc?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thomasjeffcosta/)](https://www.linkedin.com/in/thomasjeffcosta/) 
-</div>
+---
+### By
+Edition made with ❤️ by Thomas Costa 👋
+
+[![Linkedin Badge](https://img.shields.io/badge/-Thomas%20Costa-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/thomasjeffcosta/) 
+[![Gmail Badge](https://img.shields.io/badge/-thomas.jeffcosta@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:thomas.jeffcosta@gmail.com)](mailto:thomas.jeffcosta@gmail.com)
