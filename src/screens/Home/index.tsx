@@ -40,8 +40,17 @@ export function Home() {
   };
 
   async function handleCorrect() {
+    if (currentCard < totalOfCards) {
+      await handleScore();
 
-  }
+      cardListRef.current?.scrollToIndex({
+        index: currentCard + 1,
+        animated: true,
+      });
+    };
+
+    setCurrentCard(prevState => prevState + 1)
+  };
 
   return (
     <View style={styles.container}>
@@ -56,6 +65,7 @@ export function Home() {
         horizontal
         scrollEnabled={false}
         showsHorizontalScrollIndicator={false}
+        initialScrollIndex={currentCard}
       />
 
       <Text style={styles.tip}>Toque no cartão para inverter</Text>
