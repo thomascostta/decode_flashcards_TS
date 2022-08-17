@@ -1,9 +1,10 @@
 <h1 align="center">
- Flash Cards 🤦‍♂️
+ Flash Cards 
 </h1>
 
 ### Overview :book:
-App to help memorize. This application was created for the purpose of studies.
+Aplicativo para estudos utilizando feedback de memorização. Desenvolvido com React Native, Typescript, Expo e bibliotecas de animação.
+
 
 ### Stack
 
