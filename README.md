@@ -18,8 +18,6 @@ Aplicativo para estudos utilizando feedback de memorização. Desenvolvido com R
 
 ### Running
 
-You have two branchs. The master you have project base with layout design only. And, the done you have the project finished with charts implemented.
-
 Clone this project and start with Expo: 
 ```bash
   git clone branch_url
